@@ -17,7 +17,7 @@ for (const match of matches) {
   } else if (isEnabled && mulRegex.test(match)) {
     const mulFind = mulRegex.exec(match);
     const [, num1, num2] = mulFind;
-    const mul = num1 * num2;
+    const mul = Number(num1) * Number(num2);
     newArr.push(mul);
   }
 }
