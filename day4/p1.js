@@ -7,93 +7,50 @@ let count = 0;
 let ROWS = data.length;
 let COLS = data[0].length;
 
-const regex = /XMAS/;
+// const regex = /XMAS/;
 // const path = new Set(); //path.add(element) No Duplicates
+
+const directions = [
+  [0, 1], // right
+  [0, -1], // left
+  [1, 0], // down
+  [-1, 0], // up
+  [1, 1], // diagonal down-right
+  [1, -1], // diagonal down-left
+  [-1, 1], // diagonal up-right
+  [-1, -1], // diagonal up-left
+];
 
 for (let i = 0; i < ROWS; i++) {
   for (let j = 0; j < COLS; j++) {
     if (data[i][j] === "X") {
-      // Check right
-      if (
-        j + 3 < COLS &&
-        data[i][j + 1] === "M" &&
-        data[i][j + 2] === "A" &&
-        data[i][j + 3] === "S"
-      ) {
-        count++;
-      }
+      for (let [di, dj] of directions) {
+        let i1 = i + di,
+          j1 = j + dj;
+        let i2 = i + 2 * di,
+          j2 = j + 2 * dj;
+        let i3 = i + 3 * di,
+          j3 = j + 3 * dj;
 
-      // Check left
-      if (
-        j - 3 >= 0 &&
-        data[i][j - 1] === "M" &&
-        data[i][j - 2] === "A" &&
-        data[i][j - 3] === "S"
-      ) {
-        count++;
-      }
-
-      // Check down
-      if (
-        i + 3 < ROWS &&
-        data[i + 1][j] === "M" &&
-        data[i + 2][j] === "A" &&
-        data[i + 3][j] === "S"
-      ) {
-        count++;
-      }
-
-      // Check up
-      if (
-        i - 3 >= 0 &&
-        data[i - 1][j] === "M" &&
-        data[i - 2][j] === "A" &&
-        data[i - 3][j] === "S"
-      ) {
-        count++;
-      }
-      // Check diagonal down-right
-      if (
-        i + 3 < ROWS &&
-        j + 3 < COLS &&
-        data[i + 1][j + 1] === "M" &&
-        data[i + 2][j + 2] === "A" &&
-        data[i + 3][j + 3] === "S"
-      ) {
-        count++;
-      }
-
-      // Check diagonal down-left
-      if (
-        i + 3 < ROWS &&
-        j - 3 >= 0 &&
-        data[i + 1][j - 1] === "M" &&
-        data[i + 2][j - 2] === "A" &&
-        data[i + 3][j - 3] === "S"
-      ) {
-        count++;
-      }
-
-      // Check diagonal up-right
-      if (
-        i - 3 >= 0 &&
-        j + 3 < COLS &&
-        data[i - 1][j + 1] === "M" &&
-        data[i - 2][j + 2] === "A" &&
-        data[i - 3][j + 3] === "S"
-      ) {
-        count++;
-      }
-
-      // Check diagonal up-left
-      if (
-        i - 3 >= 0 &&
-        j - 3 >= 0 &&
-        data[i - 1][j - 1] === "M" &&
-        data[i - 2][j - 2] === "A" &&
-        data[i - 3][j - 3] === "S"
-      ) {
-        count++;
+        if (
+          i1 >= 0 &&
+          i1 < ROWS &&
+          j1 >= 0 &&
+          j1 < COLS &&
+          i2 >= 0 &&
+          i2 < ROWS &&
+          j2 >= 0 &&
+          j2 < COLS &&
+          i3 >= 0 &&
+          i3 < ROWS &&
+          j3 >= 0 &&
+          j3 < COLS &&
+          data[i1][j1] === "M" &&
+          data[i2][j2] === "A" &&
+          data[i3][j3] === "S"
+        ) {
+          count++;
+        }
       }
     }
   }
