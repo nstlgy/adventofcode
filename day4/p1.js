@@ -7,9 +7,6 @@ let count = 0;
 let ROWS = data.length;
 let COLS = data[0].length;
 
-// const regex = /XMAS/;
-// const path = new Set(); //path.add(element) No Duplicates
-
 const directions = [
   [0, 1], // right
   [0, -1], // left
@@ -31,7 +28,6 @@ for (let i = 0; i < ROWS; i++) {
           j2 = j + 2 * dj;
         let i3 = i + 3 * di,
           j3 = j + 3 * dj;
-
         if (
           i1 >= 0 &&
           i1 < ROWS &&
