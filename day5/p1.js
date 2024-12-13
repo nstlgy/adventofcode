@@ -27,7 +27,7 @@ for (let update of UPDATES) {
 
   let valid = true;
 
-  for (let i = 0; i < update.length; i++) {
+  for (let i = 0; i < update.length && valid; i++) {
     let page = update[i];
     if (graph[page]) {
       for (let afterPage of graph[page]) {
@@ -40,10 +40,8 @@ for (let update of UPDATES) {
         }
       }
     }
-    if (!valid) {
-      break;
-    }
   }
+
   if (valid) {
     const middle = update[Math.floor(update.length / 2)];
     sumOfMiddle += middle;
