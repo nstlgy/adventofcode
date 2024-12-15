@@ -6,43 +6,27 @@
 
 Welcome to my journey through the Advent of Code 2024! This repository documents my progress, key learnings, and solution approaches as I tackle each programming puzzle.
 
-## 🌟 Quick Overview
-
-- **Languages Used**: JavaScript (Node.js)
-- **Total Stars**: 10/50
-- **Time Spent**: ~10 hours
-
 ## Day 1:
-
-**Progress:**
 
 - **Part 1:** Completed successfully.
 - **Part 2:** Completed with some challenges in optimization.
 
 ## Day 2:
 
-**Progress:**
-
 - **Part 1:** Solved with minimal issues.
 - **Part 2:** Faced difficulty due to a logic error but corrected after debugging.
 
 ## Day 3:
-
-**Progress:**
 
 - **Part 1:** Smooth sailing, implemented a straightforward solution.
 - **Part 2:** Took longer due to a misunderstanding of the problem statement.
 
 ## Day 4:
 
-**Progress:**
-
 - **Part 1:** Solved efficiently.
 - **Part 2:** Required some backtracking to optimize performance.
 
 ## Day 5:
-
-**Progress:**
 
 - **Part 1:** Successfully implemented.
 - **Part 2:** Had to rework my initial approach but got there eventually.
