@@ -12,96 +12,39 @@ Welcome to my journey through the Advent of Code 2024! This repository documents
 - **Total Stars**: 10/50
 - **Time Spent**: ~10 hours
 
-## 📝 Daily Progress
+## Day 1:
 
-### Day 1: Historian Hysteria
+**Progress:**
 
-**Solution Stats:**
+- **Part 1:** Completed successfully.
+- **Part 2:** Completed with some challenges in optimization.
 
-- Part 1 ⭐: Completed
-- Part 2 ⭐: Completed
+## Day 2:
 
-**Key Learnings:**
+**Progress:**
 
-- Optimized data structure selection between arrays and hash maps
-- Improved array manipulation using `reduce()` and other built-in methods
-- [View Solution](./day1/solution.js)
+- **Part 1:** Solved with minimal issues.
+- **Part 2:** Faced difficulty due to a logic error but corrected after debugging.
 
-### Day 2: Red-Nosed Reports
+## Day 3:
 
-**Solution Stats:**
+**Progress:**
 
-- Part 1 ⭐: Completed
-- Part 2 ⭐: Completed
+- **Part 1:** Smooth sailing, implemented a straightforward solution.
+- **Part 2:** Took longer due to a misunderstanding of the problem statement.
 
-**Key Learnings:**
+## Day 4:
 
-- Enhanced debugging methodology
-- Improved logic flow structuring
-- [View Solution](./day2/solution.js)
+**Progress:**
 
-### Day 3: Mull It Over
+- **Part 1:** Solved efficiently.
+- **Part 2:** Required some backtracking to optimize performance.
 
-**Solution Stats:**
+## Day 5:
 
-- Part 1 ⭐: Completed
-- Part 2 ⭐: Completed
+**Progress:**
 
-**Key Learnings:**
-
-- Problem statement analysis techniques
-- Complex problem decomposition
-- [View Solution](./day3/solution.js)
-
-### Day 4: Ceres Search
-
-**Solution Stats:**
-
-- Part 1 ⭐: Completed
-- Part 2 ⭐: Completed
-
-**Key Learnings:**
-
-- Performance optimization strategies
-- Trade-offs between recursion and iteration
-- [View Solution](./day4/solution.js)
-
-### Day 5: Print Queue
-
-**Solution Stats:**
-
-- Part 1 ⭐: Completed
-- Part 2 ⭐: Completed
-
-**Key Learnings:**
-
-- Applied graph theory concepts
-- Custom sorting implementation
-- [View Solution](./day5/solution.js)
-
-## 🛠 Setup and Usage
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/advent-of-code-2024.git
-
-# Navigate to desired day
-cd advent-of-code-2024/day1
-
-# Run solution
-node solution.js
-```
-
-## 🙏 Acknowledgements
-
-Special thanks to:
-
-- [Advent of Code](https://adventofcode.com/) creator Eric Wastl
-- The amazing AoC community for their support and discussions
-- Fellow participants for sharing their insights
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- **Part 1:** Successfully implemented.
+- **Part 2:** Had to rework my initial approach but got there eventually.
 
 Happy Coding! 🎄✨
