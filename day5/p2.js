@@ -14,17 +14,13 @@ const UPDATES = data
 let valid = true;
 let invalidUpdates = [];
 
-// Graph
 const graph = {};
-
 RULES.forEach(([x, y]) => {
   if (!graph[x]) {
     graph[x] = [];
   }
   graph[x].push(y);
 });
-
-console.log(graph);
 
 for (let update of UPDATES) {
   const position = new Map();
@@ -52,29 +48,29 @@ for (let update of UPDATES) {
 }
 
 function sortInvalidUpdates(invalidUpdates) {
-  for (let update of invalidUpdates) {
-    const position = new Map();
-    update.forEach((page, idx) => position.set(page, idx));
-    console.log(position);
-    for (let i = 0; i < update.length; i++) {
-      let page = update[i];
-      if (graph[page]) {
-        for (let element of graph[page]) {
-          if (
-            position.has(element) &&
-            position.get(page) > position.get(element)
-          ) {
-            const temp = update[position.get(page)];
-            update[position.get(page)] = update[position.get(element)];
-            update[position.get(element)] = temp;
+  return invalidUpdates.map((update) => {
+    let pageMap = new Map(update.map((page, index) => [page, index]));
+    let sorted = false;
+    while (!sorted) {
+      sorted = true;
+      for (let i = 0; i < update.length - 1; i++) {
+        for (let j = i + 1; j < update.length; j++) {
+          if (graph[update[i]] && graph[update[i]].includes(update[j])) {
+            [update[i], update[j]] = [update[j], update[i]];
+            sorted = false;
           }
         }
       }
     }
-    console.log(update);
-  }
+    return update;
+  });
 }
 
-sortInvalidUpdates(invalidUpdates);
+const sortedInvalidUpdates = sortInvalidUpdates(invalidUpdates);
 
-// console.log(invalidUpdates);
+let sumOfMiddlePages = sortedInvalidUpdates.reduce((sum, update) => {
+  const middleIndex = Math.floor((update.length - 1) / 2);
+  return sum + update[middleIndex];
+}, 0);
+
+console.log(sumOfMiddlePages);
