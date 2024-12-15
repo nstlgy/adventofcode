@@ -8,27 +8,27 @@ Welcome to my journey through the Advent of Code 2024! This repository documents
 
 ## Day 1:
 
-- **Part 1:** Completed successfully.
-- **Part 2:** Completed with some challenges in optimization.
+- **Part 1:** -
+- **Part 2:** -
 
 ## Day 2:
 
-- **Part 1:** Solved with minimal issues.
-- **Part 2:** Faced difficulty due to a logic error but corrected after debugging.
+- **Part 1:** -
+- **Part 2:** -
 
 ## Day 3:
 
-- **Part 1:** Smooth sailing, implemented a straightforward solution.
-- **Part 2:** Took longer due to a misunderstanding of the problem statement.
+- **Part 1:** -
+- **Part 2:** -
 
 ## Day 4:
 
-- **Part 1:** Solved efficiently.
-- **Part 2:** Required some backtracking to optimize performance.
+- **Part 1:** -
+- **Part 2:** -
 
 ## Day 5:
 
-- **Part 1:** Successfully implemented.
-- **Part 2:** Had to rework my initial approach but got there eventually.
+- **Part 1:** -
+- **Part 2:** -
 
 Happy Coding! 🎄✨
