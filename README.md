@@ -31,4 +31,9 @@ Welcome to my journey through the Advent of Code 2024! This repository documents
 - **Part 1:** -
 - **Part 2:** -
 
-Happy Coding! 🎄✨
+## Day 6:
+
+- **Part 1:** - I was trying to solve it smartly, and overlooked at the simplicity and wasted a lot of time.
+- **Part 2:** -
+
+  Happy Coding! 🎄✨
